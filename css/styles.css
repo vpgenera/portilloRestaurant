@@ -149,6 +149,9 @@
 }
 #menuBody main .productList {
   margin: 16px;
+  display: flex;
+  flex-flow: column;
+  gap: 24px;
 }
 #menuBody main .productList .optionsGrid {
   display: grid;
@@ -179,6 +182,7 @@
   text-align: center;
   font-size: 20px;
   font-weight: 400;
+  width: 50%;
 }
 #menuBody main .productList .optionsGrid .productCard .productCard__add {
   display: flex;
@@ -194,7 +198,6 @@
 #menuBody main .productList .optionsGrid .productCard .productCard__add .title {
   font-weight: 400;
   font-size: 16px;
-  text-align: left;
 }
 #menuBody main .productList .optionsGrid .productCard .productCard__add .cantidad {
   display: flex;
@@ -243,7 +246,7 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  width: 100px;
+  min-width: 100px;
 }
 #menuBody .navBar a:hover {
   background-color: #ddd;
@@ -253,8 +256,37 @@
   background-color: #04AA6D;
   color: white;
 }
-#menuBody .navBar .modal {
+#menuBody .modal {
   color: black;
+}
+#menuBody #modalInfo .modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+#menuBody #modalInfo .modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: space-between;
+  background-color: #e9e9e9;
+}
+#menuBody #modalInfo .modal-body .comensales {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: 100%;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px;
+}
+#menuBody #modalInfo .modal-body .comensales div {
+  width: 50%;
+}
+#menuBody #modalInfo .modal-body .infoGeneral {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 * {
