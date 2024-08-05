@@ -55,6 +55,10 @@
   font-size: 2rem;
   height: 72px;
 }
+#salonBody header .headerWrapper img {
+  width: 40px;
+  height: 40px;
+}
 #salonBody header .headerWrapper .user {
   display: flex;
   flex-direction: row;
@@ -333,6 +337,7 @@
 }
 #menuBody main .productList .optionsGrid .productCard .productCard__actions .modify .message span {
   font-weight: 300;
+  color: #33353B;
 }
 #menuBody main .productList .optionsGrid .productCard .productCard__actions .modify .wrapperCantidad {
   display: flex;
@@ -353,6 +358,7 @@
   border-radius: 16px;
   border: solid transparent;
   cursor: pointer;
+  color: #33353B;
 }
 #menuBody main .productList .optionsGrid .productCard .productCard__actions .modify .wrapperCantidad .input-qty {
   border: transparent;
