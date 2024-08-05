@@ -38,3 +38,15 @@
     }
 
 }
+
+%buttonFormat{
+    border-radius: 8px;
+    border: 1px;
+    padding: 4px 8px;
+    color: #ffff;
+    background-color: $color__blue__80;
+    a{
+        color: $color__blue__10;
+        text-decoration: none;
+    }
+}

@@ -25,12 +25,6 @@
 <body id="menuBody">
     <header>
         <div class="comanda">
-          <!--
-          Button trigger modal 
-          <button data-bs-toggle="modal" data-bs-target="#modalComanda">
-            <i class='bx bx-menu'></i>
-          </button>
-          -->
           <a href="../pages/salon.html">
             <div id="iconFormat">
               <div class="fondoBlue">
@@ -140,14 +134,16 @@
                 <div class="productCard__actions">
                     <div class="modify">
                       <div class="message">
-                        <span class="material-symbols-rounded">add_comment</span>
+                        <button data-bs-toggle="modal" data-bs-target="#modalMessage">
+                          <span class="material-symbols-rounded">add_comment</span>
+                        </button>
                       </div>
                       <div class="wrapperCantidad">
                         <button class="innerIcon minus">
                           <span class="material-symbols-rounded">remove</span>
                         </button>
                       
-                        <input type="text" name="qty" value="0" class="input-qty">
+                        <input type="number" name="qty" value="0" class="input-qty">
                         
                         <button class="innerIcon plus">
                           <span class="material-symbols-rounded">add</span>
@@ -170,14 +166,16 @@
                 <div class="productCard__actions">
                     <div class="modify">
                       <div class="message">
-                        <span class="material-symbols-rounded">add_comment</span>
+                        <button data-bs-toggle="modal" data-bs-target="#modalMessage">
+                          <span class="material-symbols-rounded">add_comment</span>
+                        </button>
                       </div>
                       <div class="wrapperCantidad">
                         <button class="innerIcon minus">
                           <span class="material-symbols-rounded">remove</span>
                         </button>
                       
-                        <input type="text" name="qty" value="0" class="input-qty">
+                        <input type="number" name="qty" value="0" class="input-qty">
                         
                         <button class="innerIcon plus">
                           <span class="material-symbols-rounded">add</span>
@@ -191,22 +189,25 @@
                     </button>    
                 </div>
               </article>
+
               <article class="productCard">
                 <div class="productCard__info">
-                  <p class="product__name">Consomé</p>
+                  <p class="product__name">Entrada del Día</p>
                   <p class="product__price">$4.990</p>
                 </div>
                 <div class="productCard__actions">
                     <div class="modify">
                       <div class="message">
-                        <span class="material-symbols-rounded">add_comment</span>
+                        <button data-bs-toggle="modal" data-bs-target="#modalMessage">
+                          <span class="material-symbols-rounded">add_comment</span>
+                        </button>
                       </div>
                       <div class="wrapperCantidad">
                         <button class="innerIcon minus">
                           <span class="material-symbols-rounded">remove</span>
                         </button>
                       
-                        <input type="text" name="qty" value="0" class="input-qty">
+                        <input type="number" name="qty" value="0" class="input-qty">
                         
                         <button class="innerIcon plus">
                           <span class="material-symbols-rounded">add</span>
@@ -220,8 +221,7 @@
                     </button>    
                 </div>
               </article>
-                    
-              
+                
             </div>
           </div>
 
@@ -236,14 +236,16 @@
                 <div class="productCard__actions">
                     <div class="modify">
                       <div class="message">
-                        <span class="material-symbols-rounded">add_comment</span>
+                        <button data-bs-toggle="modal" data-bs-target="#modalMessage">
+                          <span class="material-symbols-rounded">add_comment</span>
+                        </button>
                       </div>
                       <div class="wrapperCantidad">
                         <button class="innerIcon minus">
                           <span class="material-symbols-rounded">remove</span>
                         </button>
                       
-                        <input type="text" name="qty" value="0" class="input-qty">
+                        <input type="number" name="qty" value="0" class="input-qty">
                         
                         <button class="innerIcon plus">
                           <span class="material-symbols-rounded">add</span>
@@ -257,6 +259,7 @@
                     </button>    
                 </div>
               </article>
+
               <article class="productCard">
                 <div class="productCard__info">
                   <p class="product__name">Entrada del Día</p>
@@ -265,14 +268,16 @@
                 <div class="productCard__actions">
                     <div class="modify">
                       <div class="message">
-                        <span class="material-symbols-rounded">add_comment</span>
+                        <button data-bs-toggle="modal" data-bs-target="#modalMessage">
+                          <span class="material-symbols-rounded">add_comment</span>
+                        </button>
                       </div>
                       <div class="wrapperCantidad">
                         <button class="innerIcon minus">
                           <span class="material-symbols-rounded">remove</span>
                         </button>
                       
-                        <input type="text" name="qty" value="0" class="input-qty">
+                        <input type="number" name="qty" value="0" class="input-qty">
                         
                         <button class="innerIcon plus">
                           <span class="material-symbols-rounded">add</span>
@@ -286,12 +291,45 @@
                     </button>    
                 </div>
               </article>
-              
+
+              <article class="productCard">
+                <div class="productCard__info">
+                  <p class="product__name">Entrada del Día</p>
+                  <p class="product__price">$4.990</p>
+                </div>
+                <div class="productCard__actions">
+                    <div class="modify">
+                      <div class="message">
+                        <button data-bs-toggle="modal" data-bs-target="#modalMessage">
+                          <span class="material-symbols-rounded">add_comment</span>
+                        </button>
+                      </div>
+                      <div class="wrapperCantidad">
+                        <button class="innerIcon minus">
+                          <span class="material-symbols-rounded">remove</span>
+                        </button>
+                      
+                        <input type="number" name="qty" value="0" class="input-qty">
+                        
+                        <button class="innerIcon plus">
+                          <span class="material-symbols-rounded">add</span>
+                        </button>  
+                      </div>
+                    </div>
+                    
+                    <button class="send" type="button">
+                      Enviar 
+                      <span class="material-symbols-rounded">send</span>
+                    </button>    
+                </div>
+              </article>
+          
             </div>
           </div>
           <div id="fondosAlternativos">
             <h2>Fondos Alternativos</h2>
             <div class="optionsGrid">
+              
               <article class="productCard">
                 <div class="productCard__info">
                   <p class="product__name">Entrada del Día</p>
@@ -300,15 +338,17 @@
                 <div class="productCard__actions">
                     <div class="modify">
                       <div class="message">
-                        <span class="material-symbols-rounded">add_comment</span>
+                        <button data-bs-toggle="modal" data-bs-target="#modalMessage">
+                          <span class="material-symbols-rounded">add_comment</span>
+                        </button>
                       </div>
                       <div class="wrapperCantidad">
                         <button class="innerIcon minus">
                           <span class="material-symbols-rounded">remove</span>
                         </button>
                       
-                        <input type="text" name="qty" value="0" class="input-qty">
-                        
+                        <input type="number" name="qty" value="0" class="input-qty">
+        
                         <button class="innerIcon plus">
                           <span class="material-symbols-rounded">add</span>
                         </button>  
@@ -321,6 +361,7 @@
                     </button>    
                 </div>
               </article>
+
               <article class="productCard">
                 <div class="productCard__info">
                   <p class="product__name">Entrada del Día</p>
@@ -329,27 +370,29 @@
                 <div class="productCard__actions">
                     <div class="modify">
                       <div class="message">
-                        <span class="material-symbols-rounded">add_comment</span>
+                        <button data-bs-toggle="modal" data-bs-target="#modalMessage">
+                          <span class="material-symbols-rounded">add_comment</span>
+                        </button>
                       </div>
                       <div class="wrapperCantidad">
                         <button class="innerIcon minus">
                           <span class="material-symbols-rounded">remove</span>
                         </button>
                       
-                        <input type="text" name="qty" value="0" class="input-qty">
+                        <input type="number" name="qty" value="0" class="input-qty">
                         
                         <button class="innerIcon plus">
                           <span class="material-symbols-rounded">add</span>
                         </button>  
                       </div>
                     </div>
-                    
                     <button class="send" type="button">
                       Enviar 
                       <span class="material-symbols-rounded">send</span>
                     </button>    
                 </div>
               </article>
+
               <article class="productCard">
                 <div class="productCard__info">
                   <p class="product__name">Entrada del Día</p>
@@ -358,21 +401,22 @@
                 <div class="productCard__actions">
                     <div class="modify">
                       <div class="message">
-                        <span class="material-symbols-rounded">add_comment</span>
+                        <button data-bs-toggle="modal" data-bs-target="#modalMessage">
+                          <span class="material-symbols-rounded">add_comment</span>
+                        </button>
                       </div>
                       <div class="wrapperCantidad">
                         <button class="innerIcon minus">
                           <span class="material-symbols-rounded">remove</span>
                         </button>
                       
-                        <input type="text" name="qty" value="0" class="input-qty">
+                        <input type="number" name="qty" value="0" class="input-qty">
                         
                         <button class="innerIcon plus">
                           <span class="material-symbols-rounded">add</span>
                         </button>  
                       </div>
                     </div>
-                    
                     <button class="send" type="button">
                       Enviar 
                       <span class="material-symbols-rounded">send</span>
@@ -384,6 +428,35 @@
 
 
         </div>
+
+        <!-- Modal message-->
+        <div class="modal fade" id="modalMessage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Añadir comentario</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <input id="comentario" type="text" maxlength="150">
+                <div class="Enviado">
+                  <p>Hasta 150 caracteres</p>
+                </div>            
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
         
       
         <!-- Modal comanda-->
@@ -414,8 +487,15 @@
           </div>
         </div>
 
+        
+
+
+
+
+
+
         <!-- Modal info comensales-->
-        <div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="modalComensales" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
@@ -448,7 +528,6 @@
                     <p>TC: $980,3</p>
                   </div>
 
-
                 </div>
                         
               </div>
@@ -461,17 +540,30 @@
        
     </main>
     <div class="navBar">
-      <div>
-        <a data-bs-toggle="modal" data-bs-target="#modalInfo" href="#modalInfo"><i class='bx bx-info-circle'></i>Información</a>    
-      </div>
-      <div>
-        <a href="../pages/menu.html"><i class='bx bx-notepad' ></i>Añadir a Comanda</a>
-      </div>
-      <div>
-        <a href="./salon.html"><i class='bx bx-exit'></i> Volver </a>
-      </div>
-    </div>
-
+      <button data-bs-toggle="modal" data-bs-target="#modalComensales" class="botonNavbar informacionComensales">
+        <div id="iconFormat">
+            <div class="fondoBlue">
+                <div class="fondoBlanco">
+                    <span class="material-symbols-rounded">groups</span>
+                </div>
+            </div>
+        </div>
+        <p>Comensales</p>
+         
+      </button>
+      <button data-bs-toggle="modal" data-bs-target="#modalComanda" class="botonNavbar comanda">
+        <div id="iconFormat">
+            <div class="fondoBlue">
+                <div class="fondoBlanco">
+                    <span class="material-symbols-rounded">checklist</span>
+                </div>
+            </div>
+        </div>
+        <p>Ver Comanda</p>
+         
+      </button>
+  </div>
+  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

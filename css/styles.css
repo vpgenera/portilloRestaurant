@@ -135,11 +135,25 @@
   align-items: center;
   justify-content: center;
 }
-#salonBody .navBar div .informacion {
+#salonBody .navBar .informacion {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+  border: solid transparent;
+  color: #F9FAFF;
+  padding: 14px 16px;
+  font-size: 16px;
 }
-#salonBody .navBar a {
+#salonBody .navBar .informacion:hover {
+  background-color: #F9FAFF;
+  color: #3F5CC1;
+}
+#salonBody .navBar .cerrarSesion a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
   display: flex;
   flex-direction: row;
   color: #F9FAFF;
@@ -147,54 +161,32 @@
   align-items: center;
   justify-content: center;
   padding: 14px 16px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 400;
   width: auto;
   gap: 4px;
 }
-#salonBody .navBar a:hover {
+#salonBody .navBar .cerrarSesion a:hover {
   background-color: #F9FAFF;
   color: #3F5CC1;
 }
-#salonBody .navBar a:active {
-  background-color: #F9FAFF;
-  color: #3F5CC1;
+#salonBody #modalInformacion .modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+#salonBody #modalInformacion .modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: space-between;
+  background-color: #e9e9e9;
+}
+#salonBody #modalInformacion .modal-body .infoGeneral {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 #menuBody {
   color: #33353B;
   background-color: #F9FAFF;
-  /*   
-  .navBar{
-      background-color: #333;
-      overflow: hidden;
-
-      position: sticky;
-      bottom: 0;
-      width: 100%;
-      display: flex;
-      flex-flow: row nowrap;
-      align-items: center;
-      justify-content: center;
-      a{
-
-          display: block;
-          color: #f2f2f2;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-          font-size: 17px;
-          min-width: 100px;
-          &:hover{
-              background-color: #ddd;
-              color: black;
-          }
-          .active {
-              background-color: #04AA6D;
-              color: white;
-          }
-      }
-  }*/
 }
 #menuBody header {
   position: sticky;
@@ -333,6 +325,12 @@
   background-color: #F9FAFF;
   height: 40px;
 }
+#menuBody main .productList .optionsGrid .productCard .productCard__actions .modify .message button {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
 #menuBody main .productList .optionsGrid .productCard .productCard__actions .modify .message span {
   font-weight: 300;
 }
@@ -358,7 +356,7 @@
 }
 #menuBody main .productList .optionsGrid .productCard .productCard__actions .modify .wrapperCantidad .input-qty {
   border: transparent;
-  width: 20px;
+  max-width: 24px;
   text-align: center;
   background-color: transparent;
 }
@@ -388,9 +386,24 @@
   align-items: center;
   justify-content: center;
 }
-#menuBody .navBar div .informacion {
+#menuBody .navBar .botonNavbar {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: transparent;
+  border: solid transparent;
+  color: #F9FAFF;
+  padding: 14px 16px;
+  font-size: 16px;
+}
+#menuBody .navBar .botonNavbar p {
+  margin-bottom: 0px;
+}
+#menuBody .navBar .botonNavbar:hover {
+  background-color: #F9FAFF;
+  color: #3F5CC1;
 }
 #menuBody .navBar a {
   display: flex;
@@ -415,7 +428,7 @@
   color: #3F5CC1;
 }
 #menuBody .modal {
-  color: black;
+  color: #33353B;
 }
 #menuBody #modalInfo .modal-header {
   display: flex;
@@ -445,6 +458,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+#menuBody #modalMessage .modal-body {
+  margin-bottom: 16px;
+}
+#menuBody #modalMessage .modal-body #comentario {
+  width: 100%;
+  height: 56px;
 }
 
 #pruebas .gridContainer {
@@ -493,14 +513,14 @@
   color: blueviolet;
 }
 
-#salonBody .navBar div #iconFormat .fondoBlue, #menuBody header .comanda a #iconFormat .fondoBlue, #menuBody main .categories a .divItem #iconFormat .fondoBlue, #menuBody .navBar div #iconFormat .fondoBlue {
+#salonBody .navBar .informacion #iconFormat .fondoBlue, #salonBody .navBar .cerrarSesion #iconFormat .fondoBlue, #menuBody header .comanda a #iconFormat .fondoBlue, #menuBody main .categories a .divItem #iconFormat .fondoBlue, #menuBody .navBar .botonNavbar #iconFormat .fondoBlue {
   background-color: #E0E5F8;
   padding: 4px;
   border-radius: 30px;
   width: min-content;
   border: 1px;
 }
-#salonBody .navBar div #iconFormat .fondoBlanco, #menuBody header .comanda a #iconFormat .fondoBlanco, #menuBody main .categories a .divItem #iconFormat .fondoBlanco, #menuBody .navBar div #iconFormat .fondoBlanco {
+#salonBody .navBar .informacion #iconFormat .fondoBlanco, #salonBody .navBar .cerrarSesion #iconFormat .fondoBlanco, #menuBody header .comanda a #iconFormat .fondoBlanco, #menuBody main .categories a .divItem #iconFormat .fondoBlanco, #menuBody .navBar .botonNavbar #iconFormat .fondoBlanco {
   background-color: #fff;
   border-radius: 30px;
   width: 30px;
@@ -512,21 +532,33 @@
   align-items: center;
   justify-content: center;
 }
-#salonBody .navBar div #iconFormat span, #menuBody header .comanda a #iconFormat span, #menuBody main .categories a .divItem #iconFormat span, #menuBody .navBar div #iconFormat span {
+#salonBody .navBar .informacion #iconFormat span, #salonBody .navBar .cerrarSesion #iconFormat span, #menuBody header .comanda a #iconFormat span, #menuBody main .categories a .divItem #iconFormat span, #menuBody .navBar .botonNavbar #iconFormat span {
   font-size: 24px;
   font-weight: 300;
   border-radius: 30px;
   color: #33353B;
 }
 
-#salonBody .navBar a:hover #iconFormat .fondoBlue, #salonBody .navBar a:active #iconFormat .fondoBlue, #menuBody main .categories a:hover #iconFormat .fondoBlue, #menuBody main .categories a:active #iconFormat .fondoBlue, #menuBody .navBar a:hover #iconFormat .fondoBlue, #menuBody .navBar a:active #iconFormat .fondoBlue {
+#salonBody .navBar .informacion:hover #iconFormat .fondoBlue, #salonBody .navBar .cerrarSesion a:hover #iconFormat .fondoBlue, #menuBody main .categories a:hover #iconFormat .fondoBlue, #menuBody main .categories a:active #iconFormat .fondoBlue, #menuBody .navBar .botonNavbar:hover #iconFormat .fondoBlue, #menuBody .navBar a:hover #iconFormat .fondoBlue, #menuBody .navBar a:active #iconFormat .fondoBlue {
   background-color: transparent;
 }
-#salonBody .navBar a:hover #iconFormat .fondoBlanco, #salonBody .navBar a:active #iconFormat .fondoBlanco, #menuBody main .categories a:hover #iconFormat .fondoBlanco, #menuBody main .categories a:active #iconFormat .fondoBlanco, #menuBody .navBar a:hover #iconFormat .fondoBlanco, #menuBody .navBar a:active #iconFormat .fondoBlanco {
+#salonBody .navBar .informacion:hover #iconFormat .fondoBlanco, #salonBody .navBar .cerrarSesion a:hover #iconFormat .fondoBlanco, #menuBody main .categories a:hover #iconFormat .fondoBlanco, #menuBody main .categories a:active #iconFormat .fondoBlanco, #menuBody .navBar .botonNavbar:hover #iconFormat .fondoBlanco, #menuBody .navBar a:hover #iconFormat .fondoBlanco, #menuBody .navBar a:active #iconFormat .fondoBlanco {
   background-color: #3F5CC1;
 }
-#salonBody .navBar a:hover #iconFormat span, #salonBody .navBar a:active #iconFormat span, #menuBody main .categories a:hover #iconFormat span, #menuBody main .categories a:active #iconFormat span, #menuBody .navBar a:hover #iconFormat span, #menuBody .navBar a:active #iconFormat span {
+#salonBody .navBar .informacion:hover #iconFormat span, #salonBody .navBar .cerrarSesion a:hover #iconFormat span, #menuBody main .categories a:hover #iconFormat span, #menuBody main .categories a:active #iconFormat span, #menuBody .navBar .botonNavbar:hover #iconFormat span, #menuBody .navBar a:hover #iconFormat span, #menuBody .navBar a:active #iconFormat span {
   color: #F9FAFF;
+}
+
+#salonBody #modalInformacion .modal-footer .cerrar {
+  border-radius: 8px;
+  border: 1px;
+  padding: 4px 8px;
+  color: white;
+  background-color: #3F5CC1;
+}
+#salonBody #modalInformacion .modal-footer .cerrar a {
+  color: #F9FAFF;
+  text-decoration: none;
 }
 
 * {
